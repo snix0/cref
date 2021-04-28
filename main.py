@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import importlib.resources as pkg_resources
 #from . import templates
 import templates

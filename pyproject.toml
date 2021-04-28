@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "cref"
+version = "0.0.1"
+description = "Quick command reference tool"
+authors = ["snix0 <snix0@github.com>"]
+packages = [
+    { include = "**/*.py" }
+]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"

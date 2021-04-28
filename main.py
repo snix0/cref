@@ -25,5 +25,5 @@ if __name__ == '__main__':
         printUsage()
         sys.exit(1)
     else:
-        print("Fetching quick reference for: " + Fore.GREEN + sys.argv[1])
+        print("Fetching quick reference for: " + Fore.GREEN + sys.argv[1] + "\n")
         print(Fore.BLUE +  refLookup(sys.argv[1]) + Style.RESET_ALL)

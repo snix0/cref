@@ -1,0 +1,11 @@
+# Fuzzing common files
+wfuzz -w /usr/share/wordlists/dirb/common.txt -u http://$IP/FUZZ -f wfuzz.common.80.html,htm --hc 404,403
+
+# Fuzzing common files and extensions
+wfuzz -w /usr/share/wordlists/dirb/common.txt -w /usr/share/wordlists/dirb/extensions_common.txt -u http://$IP/FUZZFUZ2Z -f wfuzz.common.extensions.80.html,htm --hc 404,403
+
+# Fuzzing subdomains
+wfuzz -w /usr/share/wordlists/dirb/common.txt -w /usr/share/wordlists/dirb/extensions_common.txt -u http://$IP/FUZZFUZ2Z -f wfuzz.common.extensions.80.html,htm --hc 404,403
+
+# Fuzzing parameter names
+wfuzz -w /usr/share/wordlists/dirb/common.txt -w /usr/share/wordlists/dirb/extensions_common.txt -u http://$IP/FUZZFUZ2Z -f wfuzz.common.extensions.80.html,htm --hc 404,403

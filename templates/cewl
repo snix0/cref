@@ -1,1 +1,2 @@
-./cewl
+# Search depth of 2, minimum word length of 5, output to words.txt
+cewl $URL -d 2 -m -5 -w words.txt

